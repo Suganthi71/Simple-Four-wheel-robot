@@ -6,15 +6,27 @@ This repository contains the source code and URDF files for a four-wheel robot u
 
 ros2_ws/
 ├── src/
-│ ├── urdf_test/ # Robot description and packages
-│ │ ├── CMakeLists.txt
-│ │ ├── package.xml
-│ │ ├── launch/ # Launch files
-│ │ ├── include/ # Header files
-│ │ ├── src/ # Source code
-│ │ └── urdf/ # Robot URDF files
-│ └── my_camera_pkg/ # Camera package
-├── .gitignore # Git ignore file
+│   ├── urdf_test/                # Robot description package
+│   │   ├── CMakeLists.txt
+│   │   ├── package.xml
+│   │   ├── launch/               # ROS2 launch files
+│   │   │   └── robot_launch.py
+│   │   ├── include/              # Header files (if any)
+│   │   ├── src/                  # Source code (nodes, scripts)
+│   │   │   └── robot_node.py
+│   │   └── urdf/                 # Robot URDF files
+│   │       └── robot.urdf
+│   └── my_camera_pkg/            # Camera or sensor package
+│       ├── CMakeLists.txt
+│       ├── package.xml
+│       ├── launch/
+│       ├── include/
+│       └── src/
+├── .gitignore                    # Ignore build/install/log files
+├── README.md                     # Project overview and instructions
+├── build/                        # Auto-generated build files (ignored)
+├── install/                      # Auto-generated install files (ignored)
+└── log/                          # Logs (ignored)
 
 ## How to Run
 
