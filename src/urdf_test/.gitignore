@@ -1,0 +1,7 @@
+echo "build/
+install/
+log/
+*.pyc
+__pycache__/
+" > .gitignore
+
